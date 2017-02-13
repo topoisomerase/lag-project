@@ -2,10 +2,14 @@
   text-align: center;
 }
 
+body{
+  background-image: url("images/background.png");
+}
+
 #question{
   height:30%;
   margin-top:-50px;
-  font-size: 125px;
+  font-size: 130px;
   color: red;
 }
 
@@ -15,8 +19,6 @@
 }
 
 #shapes{
-  height:80%;
-  width: 20%;
   float:left;
   margin-left: 3.5%;
 }
