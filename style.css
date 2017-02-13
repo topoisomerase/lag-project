@@ -4,7 +4,7 @@
 
 #question{
   height:30%;
-  margin-top:-20px;
+  margin-top:-50px;
   font-size: 125px;
   color: red;
 }
@@ -73,6 +73,51 @@
     height: 100%;
     overflow: hidden;
     position: absolute;
-    margin: 0 40px 0 40px;
+  }
+
+  #question{
+    margin-bottom:-5%;
+  }
+
+  #shapes{
+    width: 20%;
+    margin-left: 20%;
+    margin-bottom:10%;
+  }
+
+  .triangle{
+    border-width: 0 108.75px 187.5px 108.75px;
+    margin-right:1%;
+  }
+
+  .square{
+    height: 187.5px;
+    width: 187.5px;
+  }
+
+  .circle{
+    height: 187.5px;
+    width: 187.5px;
+    border-radius: 150px;
+  }
+
+  .diamond {
+  	width: 0;
+  	height: 0;
+  	border: 93.75px solid transparent;
+  	border-bottom-color: blue;
+  	position: relative;
+  	top: -93.74px;
+  }
+
+  .diamond:after {
+  	content: '';
+  	position: absolute;
+  	left: -93.75px;
+  	top: 93px;
+  	width: 0;
+  	height: 0;
+  	border: 93.75px solid transparent;
+  	border-top-color: blue;
   }
 }
