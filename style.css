@@ -89,13 +89,16 @@ html {
     position: absolute;
   }
 
+  #answer{
+    height:
+  }
+
   #question{
     /*margin-bottom:-5%;*/
     font-size:150px;
     height:30%;
     margin-top:-100px;
     margin-left:20%;
-
   }
 
   #shapes{
@@ -123,20 +126,93 @@ html {
   .diamond {
   	width: 0;
   	height: 0;
-  	border: 93.75px solid transparent;
+  	border: 94px solid transparent;
   	border-bottom-color: blue;
   	position: relative;
-  	top: -93.74px;
+  	top: -94px;
   }
 
   .diamond:after {
   	content: '';
   	position: absolute;
-  	left: -93.75px;
-  	top: 93px;
+  	left: -94px;
+  	top: 94px;
   	width: 0;
   	height: 0;
-  	border: 93.75px solid transparent;
+  	border: 94px solid transparent;
+  	border-top-color: blue;
+  }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1366px) and (orientation:portrait) {
+
+  html {
+    background: url("images/ipadnocloud.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  body {
+    -webkit-transform: rotate(90deg);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  #answer{
+    height:
+  }
+
+  #question{
+    /*margin-bottom:-5%;*/
+    font-size:200px;
+    height:30%;
+    margin-top:-100px;
+    margin-left:20%;
+  }
+
+  #shapes{
+    width: 20%;
+    margin-left: 25%;
+    margin-bottom:10%;
+  }
+
+  .triangle{
+    border-width: 0 135.94px 234.38px 135.94px;
+    margin-right:1%;
+  }
+
+  .square{
+    height: 234.38px;
+    width: 234.38px;
+  }
+
+  .circle{
+    height: 234.38px;
+    width: 234.38px;
+    border-radius: 150px;
+  }
+
+  .diamond {
+  	width: 0;
+  	height: 0;
+  	border: 118px solid transparent;
+  	border-bottom-color: blue;
+  	position: relative;
+  	top: -118px;
+  }
+
+  .diamond:after {
+  	content: '';
+  	position: absolute;
+  	left: -118px;
+  	top: 118px;
+  	width: 0;
+  	height: 0;
+  	border: 118px solid transparent;
   	border-top-color: blue;
   }
 }
