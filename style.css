@@ -28,6 +28,10 @@ html {
   margin-left: 4.25%;
 }
 
+#shapes:hover{
+  transform: scale(1.15);
+}
+
 .triangle{
   width: 0;
   height: 0;
