@@ -4,10 +4,12 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
 }
 
 #mainContent{
   text-align: center;
+  width: 99%;
 }
 
 #question{
