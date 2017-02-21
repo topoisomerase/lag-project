@@ -56,11 +56,12 @@ html {
 }
 
 #question{
-  margin-top:-100px;
+  margin-top:-120px;
   font-size: 160px;
   color: purple;
   margin-bottom: -50px;
-  font-family: calibri, sans-serif;
+  font-family: "Comic Sans MS", calibri, sans-serif;
+  text-transform: lowercase;
 }
 
 #answer{
