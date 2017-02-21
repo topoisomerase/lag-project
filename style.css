@@ -7,32 +7,75 @@ html {
   overflow: hidden;
 }
 
+.cloud1 {
+    width: 175px;
+    height: 107px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: cloudOne;
+    -webkit-animation-duration: 60s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: cloudOne;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+@keyframes cloudOne {
+    0%   {background:url("images/cloudSingle1.png"); left:-185px;animation-timing-function: ease-in-out;}
+    /*25%  {background:url("images/cloudSingle1.png"); left:1175px;animation-timing-function: ease-out;}*/
+    50%  {background:url("images/cloudSingle1.png"); left:1400px;animation-timing-function: ease-in-out;}
+/*    75%  {background:url("images/cloudSingle1.png"); left:0px;animation-timing-function: ease;}*/
+    100% {background:url("images/cloudSingle1.png"); left:-185px;animation-timing-function: ease-in-out;}
+}
+
+.cloud2 {
+    width: 175px;
+    height: 107px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: cloudTwo;
+    -webkit-animation-duration: 50s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: cloudTwo;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+  }
+
+@keyframes cloudTwo {
+    0%   {background:url("images/cloudSingle1.png"); left:-185px;animation-timing-function: ease-in-out;}
+    /*25%  {background:url("images/cloudSingle1.png"); left:1175px;animation-timing-function: ease-out;}*/
+    50%  {background:url("images/cloudSingle1.png"); left:1400px;animation-timing-function: ease-in-out;}
+/*    75%  {background:url("images/cloudSingle1.png"); left:0px;animation-timing-function: ease;}*/
+    100% {background:url("images/cloudSingle1.png"); left:-185px;animation-timing-function: ease-in-out;}
+}
+
 #mainContent{
   text-align: center;
-  width: 99%;
 }
 
 #question{
-  margin-top:-110px;
+  margin-top:-100px;
   font-size: 160px;
   color: purple;
   margin-bottom: -50px;
-  font-family: "Comic Sans MS", calibri, sans-serif;
-  text-transform: lowercase;
+  font-family: calibri, sans-serif;
 }
 
-/*#answer{
+#answer{
   height: 50%;
   display:block;
-}*/
+}
 
 #shapes{
   float:left;
   margin-left: 4.25%;
+  overflow: hidden;
 }
 
 #shapes:hover{
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .triangle{
@@ -178,7 +221,7 @@ html {
     /*margin-bottom:-5%;*/
     font-size:200px;
     height:30%;
-    margin-top:-120px;
+    margin-top:-100px;
     margin-left:20%;
   }
 
