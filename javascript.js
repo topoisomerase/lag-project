@@ -50,13 +50,11 @@
 	function check(clicked_id){
 		var clickedOn = clicked_id;
 		var GEBIid = document.getElementById(clicked_id);
-		var GEBIq = document.getElementById(question);
-		if (GEBIid.style.borderColor=="purple"){
-			GEBIq.style.color="purple";
+		var GEBIq = document.getElementById("question");
+		if (GEBIid.style.borderColor==GEBIq.style.color){
+			window.location.reload();
 		}
-		if (GEBIid.style.borderColor==GEBIq.style.color=="purple"){
-			refresh();
-		}
+		return true;
 	}
 	//document.getElementByClassName("triangle").onclick = function() {validation();};
 
