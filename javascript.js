@@ -20,13 +20,13 @@ function validation(printColorName){
 	var Color;
 	switch (printColorsName){
 	case printColorName == "red":
-			Color = #FF0000;
+			Color = red;
 	case printColorName == "blue":
-			Color = #0000FF;
+			Color = blue;
 	case printColorName == "purple":
-			Color = #800080;
+			Color = #purple;
 	case printColorName == "green":
-			Color = 00FF00;
+			Color = green;
 	default:
 			break;
 	return Color;
