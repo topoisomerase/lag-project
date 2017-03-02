@@ -143,7 +143,8 @@ html {
 .cloud8 {
     width: 175px;
     height: 107px;
-    position: absolute; bottom: 390px;
+    position: absolute;
+    bottom: 390px;
     -webkit-animation-name: cloudEight;
     -webkit-animation-duration: 60s;
     -webkit-animation-iteration-count: infinite;
@@ -195,9 +196,7 @@ html {
 @keyframes cloudTen {
     0%   {background:url("images/cloudSingle1.png"); left:-183px;animation-timing-function: ease-in-out;}
     100%  {background:url("images/cloudSingle1.png"); left:1400px;animation-timing-function: ease-in-out;}
-
 }
-
 
 #mainContent{
   text-align: center;
@@ -210,6 +209,7 @@ html {
   margin-bottom: -50px;
   font-family: "Comic Sans MS", calibri, sans-serif;
   text-transform: lowercase;
+  margin-left:-1%;
 }
 
 .answer{
@@ -219,21 +219,21 @@ html {
 
 .shapes{
   float:left;
-  margin-left: 4.25%;
+  margin-left: 4%;
   overflow: hidden;
+  width:20%;
 }
 
 .shapes:hover{
   transform: scale(1.15);
 }
 
-#triangle{
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 145px 251px 145px;
-  border-color: transparent transparent purple transparent;
-  float:left;
+#oval {
+	width: 190px;
+	height: 250px;
+	background-color: purple;
+	border-radius: 50%;
+  margin-left:10%;
 }
 
 #square{
@@ -251,30 +251,20 @@ html {
   float:left;
 }
 
-#diamond {
-  width: 0;
-  height: 0;
-  border: 125px solid transparent;
-  border-bottom-color: blue;
-  position: relative;
-  top: -125px;
-}
-
-#diamond:after {
-  content: '';
-  position: absolute;
-  left: -125px;
-  top: 125px;
-  width: 0;
-  height: 0;
-  border: 125px solid transparent;
-  border-top-color: blue;
+#parallelogram {
+	width: 175px;
+	height: 250px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background-color: blue;
+  margin-left:17%;
 }
 
 @media only screen and (min-width:760px) and (max-width:1024px) and (orientation:portrait) {
 
   html {
-    background: url("images/ipadnocloud.jpg") no-repeat center center fixed;
+    background: url("images/ipadNoCloudNew.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -289,27 +279,76 @@ html {
     position: absolute;
   }
 
-  .answer{
-    height:
+  .cloud1 {
+      width: 0;
+      height: 0;
   }
+
+  .cloud2 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud3 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud4 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud5 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud6 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud7 {
+      width: 0;
+      height: 0;
+    }
+
+  .cloud8 {
+      width: 0;
+      height: 0;
+    }
+
+  .cloud9 {
+      width: 0;
+      height: 0;
+    }
+
+  .cloud10 {
+      width: 0;
+      height: 0;
+    }
 
   .question{
     /*margin-bottom:-5%;*/
     font-size:150px;
     height:30%;
     margin-top:-100px;
-    margin-left:20%;
+  }
+
+  #mainContent{
+    margin-left: 10%;
   }
 
   .shapes{
-    width: 20%;
-    margin-left: 25%;
+    width: 35%;
+    margin-left: 11%;
     margin-bottom:10%;
   }
 
-  #triangle{
-    border-width: 0 108.75px 187.5px 108.75px;
-    margin-right:1%;
+  #oval {
+  	width: 150px;
+  	height: 187px;
   }
 
   #square{
@@ -323,36 +362,72 @@ html {
     border-radius: 150px;
   }
 
-  #diamond {
-    width: 0;
-    height: 0;
-    border: 94px solid transparent;
-    border-bottom-color: blue;
-    position: relative;
-    top: -94px;
-  }
-
-  #diamond:after {
-    content: '';
-    position: absolute;
-    left: -94px;
-    top: 94px;
-    width: 0;
-    height: 0;
-    border: 94px solid transparent;
-    border-top-color: blue;
+  #parallelogram {
+  	width: 180px;
+  	height: 170px;
+    margin-left:14%;
   }
 }
 
 @media only screen and (min-width:1024px) and (max-width:1366px) and (orientation:portrait) {
 
   html {
-    background: url("images/ipadnocloud.jpg") no-repeat center center fixed;
+    background: url("images/ipadNoCloudNew.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
+
+  .cloud1 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud2 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud3 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud4 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud5 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud6 {
+      width: 0;
+      height: 0;
+  }
+
+  .cloud7 {
+      width: 0;
+      height: 0;
+    }
+
+  .cloud8 {
+      width: 0;
+      height: 0;
+    }
+
+  .cloud9 {
+      width: 0;
+      height: 0;
+    }
+
+  .cloud10 {
+      width: 0;
+      height: 0;
+    }
 
   body {
     -webkit-transform: rotate(90deg);
@@ -362,57 +437,42 @@ html {
     position: absolute;
   }
 
-  .answer{
-    height:
+  #mainContent{
+    margin-left: 10%;
   }
 
   .question{
     /*margin-bottom:-5%;*/
-    font-size:200px;
+    font-size:220px;
     height:30%;
     margin-top:-100px;
-    margin-left:20%;
+    margin-right:-20%;
   }
 
   .shapes{
-    width: 20%;
-    margin-left: 25%;
+    width: 37%;
     margin-bottom:10%;
   }
 
-  #triangle{
-    border-width: 0 135.94px 234.38px 135.94px;
-    margin-right:1%;
+  #oval {
+  	width: 210px;
+  	height: 254px;
   }
 
   #square{
-    height: 234.38px;
-    width: 234.38px;
+    height: 254.38px;
+    width: 254.38px;
   }
 
   #circle{
-    height: 234.38px;
-    width: 234.38px;
+    height: 254.38px;
+    width: 254.38px;
     border-radius: 150px;
   }
 
-  #diamond {
-    width: 0;
-    height: 0;
-    border: 118px solid transparent;
-    border-bottom-color: blue;
-    position: relative;
-    top: -118px;
-  }
-
-  #diamond:after {
-    content: '';
-    position: absolute;
-    left: -118px;
-    top: 118px;
-    width: 0;
-    height: 0;
-    border: 118px solid transparent;
-    border-top-color: blue;
+  #parallelogram {
+  	width: 250px;
+  	height: 254px;
+    margin-left:13%;
   }
 }
