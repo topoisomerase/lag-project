@@ -1,9 +1,9 @@
 <!--https://www.w3schools.com/js/js_intro.asp -->
 
 // the one line functions (aka the way I rename the function so i can better understand what is going on)
-	function refresh(){
-		window.location.reload();
-	}
+//function refresh(){
+//	window.location.reload();
+//}
 	//the function for 
 	/*function validation()
 	{
@@ -15,49 +15,42 @@
 			refresh();
 		}
 	} */
-	function validation(){
-		var colorsName =["Red","Blue","Purple","Green"];
-		var validation;
-		var Color;
-		var printColorName = colorsName[Math.round(Math.random()*colorsName.length-1)];
-		switch (printColorsName){
-			case printColorName == "Red":
-				Color = red;
-			case printColorName == "Blue":
-				Color = blue;
-			case printColorName == "Purple":
-				Color = purple;
-			case printColorName == "Green":
-				Color = green;
-			default:
-				break;
-
-			if (Color== purple){
-				validation = true;
-			}
-			else{
-				validation = false;
-			}
-
-			if (validation==true){
-				refresh();
-			}
-		}
+var printColorName;
+function validation(printColorName){
+	var Color;
+	switch (printColorsName){
+	case printColorName == "red":
+			Color = #FF0000;
+	case printColorName == "blue":
+			Color = #0000FF;
+	case printColorName == "purple":
+			Color = #800080;
+	case printColorName == "green":
+			Color = 00FF00;
+	default:
+			break;
+	return Color;
 	}
-	function returnClickedId(clicked_id){
-		//return clicked_id.style.backgroundColor;
+}	
+function random(){
+	var colorsName =["Red","Blue","Purple","Green"];
+	var printColorName = colorsName[Math.round(Math.random()*colorsName.length-1)];
+	return printColorName;
+}
+	
+function valid(printColorName,Color){
+	document.getElementById("question").innerHTML = printColorName;
+	document.getElementById("question").style.color = Color;
+}
+function check(clicked_id){
+	var Valid = false;
+	var clickedOn = clicked_id;
+	var GEBIid = document.getElementById(clicked_id);
+	var GEBIq = document.getElementById("question");
+	if (GEBIid.style.borderColor==GEBIq.style.color){
+		window.location.reload();
+		random();
+		validation(printColorName);
+		valid(printColorName,Color);
 	}
-	function check(clicked_id){
-		var clickedOn = clicked_id;
-		var GEBIid = document.getElementById(clicked_id);
-		var GEBIq = document.getElementById("question");
-		if (GEBIid.style.borderColor==GEBIq.style.color){
-			window.location.reload();
-		}
-		return true;
-	}
-	//document.getElementByClassName("triangle").onclick = function() {validation();};
-
-	//document.getElementByClassName("triangle").addEventListener("click", doAThing);
-
-//document.getElementByClassName("triangle")onclick="validation(ifright)";
+}
