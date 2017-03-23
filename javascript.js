@@ -15,42 +15,43 @@
 			refresh();
 		}
 	} */
-var printColorName;
-function validation(printColorName){
+function random(){
 	var Color;
-	switch (printColorsName){
+	var colorsName =["red","blue","purple","green"];
+	var printColorName = colorsName[Math.floor(Math.random()*colorsName.length)];
+	console.log("Yo random is working");
+	//validation(printColorName);
+	changeText(printColorName);
+}
+	
+
+function changeText(printColorName){
+	//change text
+	document.getElementById("question").innerHTML = printColorName;
+	// change colors
+	var Color;
+	switch (printColorName){
 	case printColorName == "red":
 			Color = red;
 	case printColorName == "blue":
 			Color = blue;
 	case printColorName == "purple":
-			Color = #purple;
+			Color = purple;
 	case printColorName == "green":
 			Color = green;
 	default:
 			break;
-	return Color;
 	}
-}	
-function random(){
-	var colorsName =["Red","Blue","Purple","Green"];
-	var printColorName = colorsName[Math.round(Math.random()*colorsName.length-1)];
-	return printColorName;
-}
-	
-function valid(printColorName,Color){
-	document.getElementById("question").innerHTML = printColorName;
-	document.getElementById("question").style.color = Color;
+	document.getElementById("question").style.color = printColorName;
+	console.log("Yo changeText is working");
 }
 function check(clicked_id){
-	var Valid = false;
-	var clickedOn = clicked_id;
+	//var clickedOn = clicked_id;
 	var GEBIid = document.getElementById(clicked_id);
 	var GEBIq = document.getElementById("question");
-	if (GEBIid.style.borderColor==GEBIq.style.color){
-		window.location.reload();
+	console.log("THE IF STATEMENT TO GET IT TO WORK IS WORKING");
+	if (GEBIid.style.backgroundColor==GEBIq.style.color){
+		//window.location.reload();
 		random();
-		validation(printColorName);
-		valid(printColorName,Color);
 	}
 }
