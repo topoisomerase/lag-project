@@ -39,7 +39,10 @@ html {
     animation-delay: 10s;
     z-index: -1;
 }
-
+.space{
+  width: 175px;
+  height: 107px;
+}
 @keyframes cloudTwo {
     0%   {background:url("images/cloudSingle1.png"); left:-183px;animation-timing-function: ease-in-out;}
     100%  {background:url("images/cloudSingle1.png"); left:1400px;animation-timing-function: ease-in-out;}
@@ -205,7 +208,7 @@ html {
 #question{
   margin-top:-120px;
   font-size: 160px;
-  color: purple;
+  color: ;
   margin-bottom: -50px;
   font-family: "Comic Sans MS", calibri, sans-serif;
   text-transform: lowercase;
@@ -229,10 +232,10 @@ html {
 }
 
 #oval {
-	width: 190px;
-	height: 250px;
-	background-color: purple;
-	border-radius: 50%;
+  width: 190px;
+  height: 250px;
+  background-color: purple;
+  border-radius: 50%;
   margin-left:10%;
 }
 
@@ -252,12 +255,12 @@ html {
 }
 
 #parallelogram {
-	width: 175px;
-	height: 250px;
-	-webkit-transform: skew(20deg);
-	   -moz-transform: skew(20deg);
-	     -o-transform: skew(20deg);
-	background-color: blue;
+  width: 175px;
+  height: 250px;
+  -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+       -o-transform: skew(20deg);
+  background-color: blue;
   margin-left:17%;
 }
 
@@ -347,8 +350,8 @@ html {
   }
 
   #oval {
-  	width: 150px;
-  	height: 187px;
+    width: 150px;
+    height: 187px;
   }
 
   #square{
@@ -363,8 +366,8 @@ html {
   }
 
   #parallelogram {
-  	width: 180px;
-  	height: 170px;
+    width: 180px;
+    height: 170px;
     margin-left:14%;
   }
 }
@@ -455,8 +458,8 @@ html {
   }
 
   #oval {
-  	width: 210px;
-  	height: 254px;
+    width: 210px;
+    height: 254px;
   }
 
   #square{
@@ -471,8 +474,8 @@ html {
   }
 
   #parallelogram {
-  	width: 250px;
-  	height: 254px;
+    width: 250px;
+    height: 254px;
     margin-left:13%;
   }
 }
